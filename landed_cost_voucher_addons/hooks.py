@@ -137,13 +137,13 @@ app_license = "gpl-3.0"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+    "Landed Cost Voucher": {
+        "on_submit": "landed_cost_voucher_addons.custom_hooks.landed_cost.on_submit",
+        "on_cancel": "landed_cost_voucher_addons.custom_hooks.landed_cost.on_cancel",
+        "before_save": "landed_cost_voucher_addons.custom_hooks.landed_cost.sum_invoice_and_charges",
+    },
+}
 
 # Scheduled Tasks
 # ---------------
@@ -241,4 +241,3 @@ app_license = "gpl-3.0"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
