@@ -243,3 +243,23 @@ doc_events = {
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "Landed Cost Taxes and Charges-party_type",
+                    "Landed Cost Taxes and Charges-party",
+                    "Landed Cost Taxes and Charges-is_paid",
+                    "Landed Cost Taxes and Charges-paid_from_account",
+                    "Landed Cost Voucher-sum_invoice_and_charges",
+                    "Landed Cost Voucher-journal_entry",
+                ],
+            ]
+        ],
+    }
+]
