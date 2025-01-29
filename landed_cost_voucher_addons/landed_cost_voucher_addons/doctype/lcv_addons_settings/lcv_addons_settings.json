@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-29 13:27:52.274551",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enable_auto_expense_on_lcv"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enable_auto_expense_on_lcv",
+   "fieldtype": "Check",
+   "label": "Enable Auto Expense on LCV"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-01-29 13:37:31.935491",
+ "modified_by": "Administrator",
+ "module": "Landed Cost Voucher Addons",
+ "name": "LCV Addons Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "All",
+   "select": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
